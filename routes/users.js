@@ -78,7 +78,7 @@ router.put(
       {
         $set: _.pick(req.body, ["username", "email", "password"]),
       },
-      { new: ture }
+      { new: true }
     );
 
     const { password, __v, ...other } = updatedUser._doc;
